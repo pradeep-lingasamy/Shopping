@@ -1,0 +1,114 @@
+let jsonproducts = `{
+    "products":[
+        {
+            "id":"p1",
+            "img":"images/prod1.jpg",
+            "title":"LEOTUDE",
+            "detail":"Cotton Blend Half Sleeve Printed Oversized T-Shirts for Men",
+            "star":"4",
+            "price":"269",
+            "cat":"tshirt",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p2",
+            "img":"images/prod2.jpg",
+            "title":"Eyebogler",
+            "detail":"Striped Men Round Neck Yellow, Blue, White T-Shirt",
+            "star":"4",
+            "price":"299",
+            "cat":"tshirt",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p3",
+            "img":"images/prod3.jpg",
+            "title":"Jump Cuts",
+            "detail":"Striped Men Round Neck Yellow, Black T-Shirt",
+            "star":"4",
+            "price":"279",
+            "cat":"tshirt",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p4",
+            "img":"images/prod4.jpg",
+            "title":"3BROS",
+            "detail":"Striped Men Polo Neck Light Green T-Shirt",
+            "star":"4",
+            "price":"499",
+            "cat":"tshirt",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p5",
+            "img":"images/prod5.jpg",
+            "title":"LEWEL",
+            "detail":"Checkered Men Hooded Neck Green, Black T-Shirt",
+            "star":"4",
+            "price":"599",
+            "cat":"tshirts",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p6",
+            "img":"images/prod6.jpg",
+            "title":"ASIAN & FITCH",
+            "detail":"Men Slim Fit Checkered Casual Shirt",
+            "star":"4",
+            "price":"459",
+            "cat":"shirts",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p7",
+            "img":"images/prod7.jpg",
+            "title":"FLYING MACHINE ",
+            "detail":"Men Slim Fit Printed Casual Shirt",
+            "star":"4",
+            "price":"575",
+            "cat":"shirts",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p8",
+            "img":"images/prod8.jpg",
+            "title":"icome",
+            "detail":"Men Regular Fit Striped Cut Away Collar Casual Shirt",
+            "star":"4",
+            "price":"499",
+            "cat":"shirts",
+            "size": "S, M, L, XL, XXL"
+        },
+        {
+            "id":"p9",
+            "img":"images/prod9.jpg",
+            "title":"ELANHOOD",
+            "detail":"Regular Fit Men Grey Cotton Blend Trousers",
+            "star":"4",
+            "price":"478",
+            "cat":"pants",
+            "size": "27,28,29,30,31,32"
+        },
+        {
+            "id":"p10",
+            "img":"images/prod10.jpg",
+            "title":"AD & AV",
+            "detail":"Regular Fit Men Black Cotton Blend Trousers",
+            "star":"4",
+            "price":"499",
+            "cat":"pants",
+            "size": "27,28,29,30,31,32"
+        },
+        {
+            "id":"p11",
+            "img":"images/prod11.jpg",
+            "title":"AD & AV",
+            "detail":"Regular Fit Men Grey Polyester Blend Trousers",
+            "star":"4",
+            "price": "549",
+            "cat":"pants",
+            "size": "27,28,29,30,31,32"
+        }
+    ]
+}`

@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*
+---------------header starts-------------------------------
+*/
+#header{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px;
+    position:fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background-color: white;
+    z-index: 100;
+}
+#searchbox{
+    display: flex;
+    flex: 1;
+   justify-content: center;
+    align-items: center;
+}
+#searchbox input{
+    flex: 1;
+    max-width: 400px;
+    height: 35px;
+    background-color: rgba(128, 128, 128, 0.2);
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    padding-left: 15px;
+    border: 1px solid rgb(180, 172, 172);
+}
+#searchbox input:focus{
+    background-color: rgba(128, 128, 128, 0.1);
+}
+#searchbox button{
+    width: 40px;
+    height: 38px;
+    background-color: rgba(128, 128, 128, 0.2);
+    outline: none;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid rgb(180, 172, 172);
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+
+#navig{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#navig li{
+    margin: 0px 20px;
+    cursor: pointer;
+}
+#navig li a{
+    text-decoration: none;
+    font-size:x-large;
+    font-weight: 700;
+    color: black;
+    position: relative;
+    transition: all 0.3s ease;
+}
+#navig li a:hover,
+#navig li a.active{
+    color: rgb(91, 91, 217);
+}
+#navig li a.active::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    border-radius: 50px;
+    bottom: -4px;
+    left: 25%;
+    background-color:rgb(91, 91, 217);
+}
+
+#navig .div-cart{
+    position: relative;
+}
+#navig .div-cart .count{
+    position: absolute;
+    top: -13px;
+    right: 13px;
+    background-color: red;
+    border-radius: 50%;
+    padding: 1px 3px;
+    text-align: center;
+}
+
+
+/*
+---------------Products-------------------------------
+*/
+#products{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 100px;
+    margin-left: 150px;
+    padding: 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    justify-content: space-between;
+    row-gap: 40px;
+}
+.product-container{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    border-radius: 3px;
+    position: relative;
+    height: 500px;
+    min-width: 260px;
+}
+.product-container:hover{
+    box-shadow: 3px 3px 6px 0.5px rgba(0, 0, 0, 0.1),  -3px -3px 6px 0.5px rgba(0, 0, 0, 0.1);
+    
+}
+.product-container img{
+    width: 94%;
+    margin: 3%;
+    border-radius: 3px;
+    height: 320px;
+    object-fit: contain;
+}
+
+.product-detail{
+    text-align: center;
+    line-height: 26px;
+    padding: 0px 3px;
+    position: absolute;
+    background-color: white;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    height: 130px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.product-detail p span{
+    color: rgb(217, 143, 5);
+}
+.product-detail h4{
+    color: brown;
+}
+.product-detail h4 span{
+    font-size: smaller;
+}
+.cart{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.cart button{
+    width: 50%;
+    border: none;
+    box-shadow: 0px -2px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.cart .cart-button{
+    background-color: green;
+    font-weight: 700;    
+}
+.cart .red{
+    background-color: red;
+    font-weight: 700;    
+}
+.cart .buy-button{
+    background-color: orange;
+    font-weight: 700; 
+}
+.cart .buy-button a{
+    text-decoration: none;
+    color: black;
+}
+
+/*
+--------cart style
+*/
+
+#cartbody{
+    background-color: rgba(128, 128, 128, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+#cart-products-list{
+    margin: 150px 500px 80px 70px;
+    min-width: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),-2px -2px 6px 0px rgba(0, 0, 0, 0.1) ;
+}
+.cart-product{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cart-product img{
+    height: 180px;
+    padding: 10px;
+    width: 150px;
+    object-fit: contain;
+}
+.cart-product-detail{
+    flex: 1;
+    line-height: 35px;
+    align-self: center;
+}
+.cart-product-detail div{
+    display: flex;
+    align-items: center;
+}
+.cart-product-detail span{
+    font-size: medium;    
+}
+.cart-product-quantity{
+    display: flex;
+    gap: 5px;
+    margin-top: 20px;
+}
+.cart-product-quantity .span{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 4px;
+}
+.cart-product-quantity input{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    width: 40px;
+    height: 25px;
+    outline: none;
+    padding-left: 10px;
+}
+.cart-product-quantity h2{
+    margin-left: 30px;
+    cursor: pointer;
+}
+.cart-product-quantity h2:hover{
+   color: rgb(68, 68, 255);
+}
+
+
+/*
+*--------------cart right
+*/
+
+
+
+#purchase{
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    top: 150px;
+    right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1),-2px -2px 6px 0px rgba(0, 0, 0, 0.1) ;
+}
+#purchase h4{
+    color: gray;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 0px 0px 15px 20px;
+}
+#purchase .price{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 15px;
+}
+#purchase .price div{
+    display: flex;
+    align-items: center;
+}
+#purchase .price div span{
+    font-size: medium;
+}
+
+#purchase .total{
+    border-top: 1px dashed rgba(128, 128, 128, 0.2) ;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.2) ;
+}
+
+
+/*
+*---------------empty card
+*/
+
+#card-empty{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#card-empty button{
+    margin-top: 15px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgba(240, 174, 52, 0.5);
+    border: none;
+    transition: all 0.3 ease;
+}
+#card-empty button:hover{
+    background-color: rgba(240, 174, 52, 1);
+}
+#card-empty button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*
+--------media
+*/
+
+
+@media (max-width: 1200px){
+    #products{
+        grid-template-columns: repeat(3, 33%);
+    }
+    #purchase{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 70px;
+        width: 300px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    #cart-products-list{
+        width: 70%;
+    }    
+}
+@media (max-width:1000px){
+    #products{
+        grid-template-columns: repeat(2, 40%);
+    }
+}
+@media (max-width:664px){
+    #products{
+        grid-template-columns: repeat(1, 40%);
+        padding: 50px;
+        
+        align-items: center;
+    }
+}
+  
+
+/*
+*-------search-area
+*/
+
+#filterarea{
+    margin-top: 50px;
+    position: fixed;
+    padding: 0px 50px 50px 30px;
+    line-height: 30px;
+    font-family: 'Gulzar', serif;
+    font-weight: bold;
+    
+}
+#filterarea button{
+    background-color: rgba(0, 0, 255, 0.7);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+    font-family: 'Gulzar', serif;
+    font-weight: bold;
+}
+#filterarea button:hover{
+    background-color: rgba(0, 0, 255, 1);
+}
+
+#filterarea #uncheck{
+    background-color: rgba(251, 73, 129, 0.7);
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-radius: 2px;
+}
+#filterarea #uncheck:hover{
+    background-color: rgba(251, 73, 129, 1);
+}
+

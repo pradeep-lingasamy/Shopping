@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="data.json"></script>
+    <title>Products</title>
+</head>
+<body id="cartbody">
+    <div id="header">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" width="180px">
+            </a>  
+        </div>
+        <div>
+            <ul  id="navig">
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a href="products.html"> Products </a></li>
+                <li> <a href="">About us</a></li>
+                <li><a href="">Blogs</a></li>
+                <div class="div-cart">
+                    <li><a  class="active" href="cart.html"><span class="material-icons">shopping_cart</span></a>
+                    <span class="count">0</span>               
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="cart-products-list"> 
+    </div>
+    <div id="card-empty">
+    </div>
+
+    <div id="purchase">
+        <h4>PRICE DETAILS</h4>
+        <div class="price">
+            <p id="itemcount">Price(1 item)</p>
+            <div>
+                <span class="material-icons"> currency_rupee</span>
+                <p id="priceid">0</p>
+            </div>
+        </div>  
+        <div class="price">
+            <p>Delivery Charges</p>
+            <div  style="color: green;" id="delivery">
+                <p>FREE</p>
+            </div>
+            
+        </div>
+        <div class="price total">
+            <h3>Total Amount</h3>
+            <div>
+                <span class="material-icons"> currency_rupee</span>
+                <h3 id="totalamount">0</h3>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="card.js"></script>
+</body>
+</html>

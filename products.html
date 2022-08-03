@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="data.json"></script>
+    <title>Products</title>
+</head>
+<body>
+    <div id="header">
+        <div>
+            <a href="index.html">
+                <img src="images/logo.png" alt="Logo" width="180px">
+            </a>  
+        </div>
+        <div id="searchbox">
+            <input type="text" id="textsearch" placeholder="search products">
+            <button onclick="searchbox()"><span class="material-icons">
+                search
+                </span></button>
+        </div>
+        <div>
+            <ul  id="navig">
+                <li> <a href="index.html"> Home </a></li>
+                <li> <a  class="active" href="products.html"> Products </a></li>
+                <li> <a href="">About us</a></li>
+                <li><a href="">Blogs</a></li>
+                <div class="div-cart">
+                    <li><a href="cart.html"><span class="material-icons">shopping_cart</span></a>
+                    <span class="count">0</span>               
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="filterarea">
+        <input class="radioclass" type="radio" name="search-item" value="tshirt">
+        <label for="tshirt">T-Shirt</label><br>
+        <input class="radioclass" type="radio" name="search-item" value="shirt">
+        <label for="shirt">Shirt</label><br>
+        <input class="radioclass" type="radio" name="search-item" value="pant">
+        <label for="pant">Pant</label><br>
+        <button  onclick="searchitem()">Search</button>
+        <button id="uncheck" onclick="uncheck()">uncheck</button>
+    </div>
+    <div id="products">
+
+    </div>
+    
+    <script src="process.js"></script>
+</body>
+</html>
